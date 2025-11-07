@@ -7,9 +7,14 @@ console.log("");
 
 //Function 2: List all classes
 timetableController.listClass().forEach((cls, index) => {
-  console.log(
-    `${index + 1}. ${cls.modName} [${cls.modCode}] - Time: ${cls.time} / Tutor: ${cls.tutor}`
-  );
+  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Time: ${cls.time} / Tutor: ${cls.tutor}`);
+});
+console.log("");
+
+//Function 3: Find class by modName
+const mod = timetableController.findByModName("electronics");
+mod.forEach((cls, index) => {
+  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Time: ${cls.time} / Tutor: ${cls.tutor}`)
 });
 
 

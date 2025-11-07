@@ -14,8 +14,15 @@ module.exports = {
         return(modName);
     },
 
-
+    //Function 2: List all classes
     listClass(){
         return this.classes;
+    },
+
+    //Function 3: Find class by modName
+    findByModName(modName){
+        return this.classes.filter(
+            c => c.modName.toLowerCase().includes(modName.toLowerCase())
+        );
     }
 };  
