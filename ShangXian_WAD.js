@@ -16,6 +16,13 @@ const mod = timetableController.findByModName("electronics");
 mod.forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Time: ${cls.time} / Tutor: ${cls.tutor}`)
 });
+console.log("");
 
+//Function 4: Remove class by modCode
+const remove = timetableController.removeClass("EGC155");
+console.log(`Removed module: ${remove.modName} [${remove.modCode}]`);
+console.log("");
 
+//Function 5: Get number of classes
+console.log("Total classes:", timetableController.getClass());
 
