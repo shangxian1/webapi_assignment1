@@ -29,7 +29,6 @@ module.exports = {
     //Function 4: Remove class by modCode
     removeClass(modCode) {
         const index = this.classes.findIndex(c => c.modCode === modCode);
-        if (index === -1) return null;
         const removed = this.classes.splice(index, 1);
         return removed[0];
     },
@@ -37,6 +36,11 @@ module.exports = {
     //Function 5: Get number of classes
     getClass() {
         return this.classes.length;
+    },
+
+    //Function 6: Get tutors
+    getTutors() {
+        return [...new Set(this.classes.map(c=>c.tutor))];
     }
 
 };  
