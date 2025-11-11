@@ -13,7 +13,7 @@ ShangXian_classes.js – This is the class scheduler Node.js module.
 # How to use
 ## 1. Installation
 - Create a file called app.js within the installation folder to test the node module.
-- Add the following code to the top of the page
+- Add the following code to the top of app.js file
   
   ```js
   const timetableController = require("./ShangXian_classes.js");
@@ -75,7 +75,7 @@ console.log("");
 
 # 2. Features 
 ## 1. Add classes with module name, module code, date, time and tutor
-  - Function 1 allows users to add classes into their schedule by passing the parameters: modName, modCode, date, time and tutor
+  - Function 1 allows students to add classes into their schedule by passing the parameters: modName, modCode, date, time and tutor
   - ```js
     timetableController.addClass(modName, modCode, date, time, tutor);
     ```
@@ -84,7 +84,16 @@ console.log("");
       const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
       console.log(addedClass + " added!");
 ```
-2. Reschedule classes
+
+## 2. Reschedule classes
+  - Function 2 allows students to reschedule their classes by changing the date and time of their class 
+  - ```js
+    timetableController.rescheduleClass(modName, date, time);
+    ```
+### Example of Feature 2
+```js
+      timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
+```
 3. Search classes by module name
 4. Cancel classes
 5. List all classes
