@@ -62,6 +62,8 @@ timetableController.listClass().forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
 });
 console.log("");
+```
+
 # 2. Features 
 1. Add classes with module name, module code, time and tutor
   - Function 1 allows users to add classes into their schedule by passing the parameters: modName, modCode, date, time and tutor
