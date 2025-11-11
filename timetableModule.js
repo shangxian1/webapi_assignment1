@@ -1,7 +1,7 @@
 //Timetable management system
 
 module.exports = {
-    //Classes list "Database"
+    //Classes list
     classes: [
         { modName: "Calculus", modCode: "EGC170", time: "8:00", tutor: "Lily Soh" },
         { modName: "Digital Electronics", modCode: "EGC180", time: "10:00", tutor: "Goh Eng Siong" },

@@ -14,6 +14,7 @@ console.log("");
 
 //Function 3: Find class by modName
 const mod = timetableController.findByModName("electronics");
+console.log("Search Results:")
 mod.forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Time: ${cls.time} / Tutor: ${cls.tutor}`)
 });
