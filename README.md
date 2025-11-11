@@ -82,7 +82,7 @@ timetableController.listClass().forEach((cls, index) => {
 console.log("");
 ```
 
-#### Sample data
+#### Sample data for classes
 
   ```js
   classes: [
