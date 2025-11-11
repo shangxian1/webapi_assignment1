@@ -138,5 +138,5 @@ console.log("");
 
   
 # References
-[PoliteMall]([url](https://politemall.polite.edu.sg/catalog?pagename=Home))
-[MyNYP Portal]([url](https://mynypportal.nyp.edu.sg/en.html))
+[PoliteMall](https://politemall.polite.edu.sg/catalog?pagename=Home)
+[MyNYP Portal](https://mynypportal.nyp.edu.sg/en.html)
