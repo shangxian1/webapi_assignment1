@@ -4,7 +4,8 @@ Class scheduler is a simple Node.js module to manage classes in a school system.
 # Getting Started
 ## Prerequisites
 Ensure that you have Node.js installed to run this node module.
-[node.js]([url](https://nodejs.org/en))
+
+[node.js](https://nodejs.org/en)
 
 Only one file is required for this assignment:
 
