@@ -2,6 +2,7 @@ const timetableController = require("./timetableModule.js");
 
 //Function 1: Add Class
 const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","2:00","Siew Peng Shorn");
+console.log("");
 console.log(addedClass+" added!");
 console.log("");
 

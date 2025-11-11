@@ -5,7 +5,8 @@ module.exports = {
     classes: [
         { modName: "Calculus", modCode: "EGC170", time: "8:00", tutor: "Lily Soh" },
         { modName: "Digital Electronics", modCode: "EGC180", time: "10:00", tutor: "Goh Eng Siong" },
-        { modName: "Electronics Devices & Applications", modCode: "EGC181", time: "12:00", tutor: "Patrick D Cruz" }
+        { modName: "Electronics Devices & Applications", modCode: "EGC181", time: "12:00", tutor: "Patrick D Cruz" },
+        { modName: "Programming", modCode: "EGC151", time: "4:00", tutor: "Chan Kit Wai" }
     ],
 
     //Function 1: Add classes
