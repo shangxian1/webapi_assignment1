@@ -13,7 +13,7 @@ ShangXian_classes.js – This is the class scheduler Node.js module.
 
 # How to use
 ## 1. Installation
-- Create a file called app.js within the installation folder to test the node module.
+#### Create a file called app.js within the installation folder to test the node module.
 
 Example folder structure:
 
@@ -22,12 +22,12 @@ assignment1/
 - ShangXian_classes.js
 - README.md
 
-- Add the following code to the top of app.js file
+#### Add the following code to the top of app.js file
   
   ```js
   const timetableController = require("./ShangXian_classes.js");
   ```
-- Type the following into the terminal to start using the node module
+#### Type the following into the terminal to start using the node module
   
   ```
   node app.js
