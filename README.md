@@ -1,5 +1,5 @@
 # Assignment 1: Class Scheduler Application
-Class scheduler is a simple Node.js module to manage classes in a timetable in a school system. It allows users to add, remove and search for classes and tutors.
+Class scheduler is a simple Node.js module to manage classes in a school system. It allows users to add, remove, search and displays classes.
 
 # Getting Started
 ## Prerequisites
@@ -24,7 +24,7 @@ ShangXian_classes.js – This is the class scheduler Node.js module.
   node app.js
   ```
 
-## Example of `app.js`
+#### Example of `app.js`
 
 ```js
 const timetableController = require("./ShangXian_classes.js");
@@ -131,12 +131,8 @@ console.log("");
   ```
 
 
-3. Search classes by module name
-4. Cancel classes
-5. List all classes
 
 
-  
 # References
 [PoliteMall](https://politemall.polite.edu.sg/catalog?pagename=Home)
 
