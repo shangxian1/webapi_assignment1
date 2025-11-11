@@ -65,10 +65,10 @@ console.log("");
 ```
 
 # 2. Features 
-1. Add classes with module name, module code, time and tutor
+## 1. Add classes with module name, module code, time and tutor
   - Function 1 allows users to add classes into their schedule by passing the parameters: modName, modCode, date, time and tutor
     
-Example of Feature 1
+### Example of Feature 1
       const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
       console.log(addedClass + " added!");
       
