@@ -2,7 +2,7 @@
 Class scheduler is a simple Node.js module to manage classes in a timetable in a school system. It allows users to add, remove and search for classes and tutors.
 
 # Getting Started
-# Prerequisites
+## Prerequisites
 Ensure that you have Node.js installed to run this node module.
 [node.js]([url](https://nodejs.org/en))
 
@@ -11,7 +11,7 @@ Only one file is required for this assignment:
 ShangXian_classes.js – This is the class scheduler Node.js module.
 
 # How to use
-# 1. Installation
+## 1. Installation
 - Create a file called app.js within the installation folder to test the node module.
 - Add const timetableController = require("./ShangXian_classes.js"); to the top of the page
 
