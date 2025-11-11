@@ -89,13 +89,26 @@ console.log("");
 #### Function 2 allows students to reschedule their classes by changing the date and time of their class 
   
   ```js
-      timetableController.rescheduleClass(modName, date, time);
+  timetableController.rescheduleClass(modName, date, time);
   ```
 #### Example of Feature 2
 
   ```js
-      timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
+  timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
   ```
+
+## 3. Search classes
+#### Function 3 allows students for their classes by the module name
+  
+  ```js
+  timetableController.searchClass(modName);
+  ```
+#### Example of Feature 2
+
+  ```js
+  timetableController.searchClass("Digital Electronics");
+  ```
+
 3. Search classes by module name
 4. Cancel classes
 5. List all classes
