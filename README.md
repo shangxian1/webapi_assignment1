@@ -10,6 +10,13 @@ Only one file is required for this assignment:
 
 ShangXian_classes.js – This is the class scheduler Node.js module.
 
+Example folder structure:
+
+assignment1/ 
+- app.js
+- ShangXian_classes.js
+- README.md
+
 # How to use
 ## 1. Installation
 - Create a file called app.js within the installation folder to test the node module.
