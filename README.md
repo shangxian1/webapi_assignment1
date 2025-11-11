@@ -73,13 +73,13 @@ timetableController.listClass().forEach((cls, index) => {
 console.log("");
 ```
 
-# 2. Features 
-## 1. Add classes with module name, module code, date, time and tutor
-#### Function 1 allows students to add classes into their schedule by passing the parameters: modName, modCode, date, time and tutor
+# 2. Functions 
+## 1. Add classes
+#### Function 1 allows students to add classes into their schedule by passing following the parameters: modName, modCode, date, time and tutor
   ```js
   timetableController.addClass(modName, modCode, date, time, tutor);
   ```
-#### Example of Feature 1
+#### Example of Function 1
 
   ```js
   const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
@@ -91,7 +91,7 @@ console.log("");
   ```js
   timetableController.rescheduleClass(modName, date, time);
   ```
-#### Example of Feature 2
+#### Example of Function 2
 
   ```js
   timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
@@ -103,11 +103,33 @@ console.log("");
   ```js
   timetableController.searchClass(modName);
   ```
-#### Example of Feature 2
+#### Example of Function 3
 
   ```js
   timetableController.searchClass("Digital Electronics");
   ```
+
+## 4. Cancel classes
+#### Function 4 allows students cancel their classes by passing the parameter modName into the function
+  
+  ```js
+  timetableController.removeClass(modName);
+  ```
+#### Example of Function 4
+
+  ```js
+  timetableController.removeClass("Workplace Digital Skills");
+  ```
+
+## 5. List classes
+#### Function 5 allows students list out all their classes  
+
+#### Example of Function 5
+
+  ```js
+  timetableController.listClass();
+  ```
+
 
 3. Search classes by module name
 4. Cancel classes
