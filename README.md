@@ -1,5 +1,5 @@
 # Assignment 1: Class Scheduler Application
-Class scheduler is a simple Node.js module to manage classes in a school system. This module allows students to manage their class schedules by adding, removing, rescheduling, searching
+Class scheduler is a simple Node.js module to manage classes in a school system. This module allows students to manage their class schedules by adding, removing, rescheduling, searching for classes.
 
 # Getting Started
 ## Prerequisites
