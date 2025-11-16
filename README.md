@@ -1,5 +1,5 @@
 # Assignment 1: Class Scheduler Application
-Class scheduler is a simple Node.js module to manage classes in a school system. This module allows students to manage their class schedules by adding, removing, rescheduling, searching
+Class scheduler is a simple Node.js module to manage classes in a school system. This module allows students to manage their class schedules by adding, removing, rescheduling, searching for classes.
 
 # Getting Started
 ## Prerequisites
@@ -40,42 +40,34 @@ const timetableController = require("./ShangXian_classes.js");
 
 // Add Class
 console.log("");
-const addedClass = timetableController.addClass("Workplace Digital Skills", "EGC155", "2:00", "Siew Peng Shorn");
-console.log(addedClass + " added!");
+const addedClass = timetableController.addClass("Workplace Digital Skills", "EGC155", "10/11/2025","2:00","Jim");
+console.log(addedClass + " added");
 console.log("");
 
-// List all classes
-console.log("Classes list:");
+// Reschedule classes
+timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
+// List classes to show rescheduled class
+console.log("Updated timetable:");
 timetableController.listClass().forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
 });
 console.log("");
 
 // Find class by modName
-const mod = timetableController.findByModName("electronics");
-console.log("Search Results:");
+const mod = timetableController.searchClass("electronics");
+console.log("Search Results:")
 mod.forEach((cls, index) => {
-  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
+  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`)
 });
 console.log("");
 
 // Remove class by modCode
-const remove = timetableController.removeClass("EGC155");
-console.log(`Removed class: ${remove.modName} [${remove.modCode}]`);
+const remove = timetableController.removeClass("Workplace Digital Skills");
+console.log(`Removed class: ${remove.modName}`);
 console.log("");
 
-// List classes to show updated classes
-console.log("Remaining classes:");
-timetableController.listClass().forEach((cls, index) => {
-  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
-});
-console.log("");
-
-// Reschedule classes
-timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
-
-// List classes to show rescheduled class
-console.log("Updated timetable:");
+// List all classes
+console.log("Classes list:")
 timetableController.listClass().forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
 });
@@ -86,11 +78,11 @@ console.log("");
 
   ```js
   classes: [
-          { modName: "Calculus", modCode: "EGC170", date:"10/11/2025", time: "8:00", tutor: "Lily Soh" },
-          { modName: "Digital Electronics", modCode: "EGC180", date:"11/11/2025", time: "10:00", tutor: "Goh Eng Siong" },
-          { modName: "Electronics Devices & Applications", modCode: "EGC181", date:"12/11/2025", time: "12:00", tutor: "Patrick D Cruz" },
-          { modName: "Programming", modCode: "EGC151", date:"13/11/2025", time: "4:00", tutor: "Chan Kit Wai" }
-      ],
+        { modName: "Calculus", modCode: "EGC170", date:"10/11/2025", time: "8:00", tutor: "Lily" },
+        { modName: "Digital Electronics", modCode: "EGC180", date:"11/11/2025", time: "10:00", tutor: "John" },
+        { modName: "Electronics Devices & Applications", modCode: "EGC181", date:"12/11/2025", time: "12:00", tutor: "Patrick" },
+        { modName: "Programming", modCode: "EGC151", date:"13/11/2025", time: "4:00", tutor: "Tom" }
+    ],
   ```
 
 # 2. Functions 
