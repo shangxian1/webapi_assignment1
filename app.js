@@ -2,8 +2,8 @@ const timetableController = require("./ShangXian_classes.js");
 
 // Add Class
 console.log("");
-const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","2:00","Siew Peng Shorn");
-console.log(addedClass + " added!");
+const addedClass = timetableController.addClass("Workplace Digital Skills", "EGC155", "10/11/2025","2:00","Jim");
+console.log(addedClass + " added");
 console.log("");
 
 // Reschedule classes
@@ -25,13 +25,7 @@ console.log("");
 
 // Remove class by modCode
 const remove = timetableController.removeClass("Workplace Digital Skills");
-console.log(`Removed class: ${remove.modName} [${remove.modCode}]`);
-console.log("");
-// List classes to show updated classes
-console.log("Remaining classes:");
-timetableController.listClass().forEach((cls, index) => {
-  console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
-});
+console.log(`Removed class: ${remove.modName}`);
 console.log("");
 
 // List all classes

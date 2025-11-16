@@ -2,10 +2,10 @@
 module.exports = {
     //Classes list
     classes: [
-        { modName: "Calculus", modCode: "EGC170", date:"10/11/2025", time: "8:00", tutor: "Lily Soh" },
-        { modName: "Digital Electronics", modCode: "EGC180", date:"11/11/2025", time: "10:00", tutor: "Goh Eng Siong" },
-        { modName: "Electronics Devices & Applications", modCode: "EGC181", date:"12/11/2025", time: "12:00", tutor: "Patrick D Cruz" },
-        { modName: "Programming", modCode: "EGC151", date:"13/11/2025", time: "4:00", tutor: "Chan Kit Wai" }
+        { modName: "Calculus", modCode: "EGC170", date:"10/11/2025", time: "8:00", tutor: "Lily" },
+        { modName: "Digital Electronics", modCode: "EGC180", date:"11/11/2025", time: "10:00", tutor: "John" },
+        { modName: "Electronics Devices & Applications", modCode: "EGC181", date:"12/11/2025", time: "12:00", tutor: "Patrick" },
+        { modName: "Programming", modCode: "EGC151", date:"13/11/2025", time: "4:00", tutor: "Tom" }
     ],
 
     //Function 1: Add classes
