@@ -147,5 +147,7 @@ console.log("");
 
 # References
 [PoliteMall](https://politemall.polite.edu.sg/catalog?pagename=Home)
-
 [MyNYP Portal](https://mynypportal.nyp.edu.sg/en.html)
+[JS findIndex](https://www.w3schools.com/jsref/jsref_findindex.asp)
+[JS Splice](https://www.w3schools.com/jsref/jsref_splice.asp)
+
