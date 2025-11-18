@@ -1,15 +1,11 @@
 # Assignment 1: Class Scheduler Application
 Class scheduler is a simple Node.js module to manage classes in a school system. This module allows students to manage their class schedules by adding, removing, rescheduling, searching for classes.
 
-# Getting Started
-## Prerequisites
-Ensure that you have Node.js installed to run this node module.
+# Prerequisites
+## Ensure that you have Node.js installed to run this node module.
 
 [node.js](https://nodejs.org/en)
 
-Only one file is required for this assignment:
-
-ShangXian_classes.js – This is the class scheduler Node.js module.
 
 # How to use
 ## 1. Installation
@@ -95,7 +91,7 @@ console.log("");
 #### Example of Function 1
 
   ```js
-  classController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
+  classController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Timmy");
   ```
 
 ## 2. Reschedule classes
