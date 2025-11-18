@@ -25,7 +25,7 @@ assignment1/
 #### Add the following code to the top of app.js file
   
   ```js
-  const timetableController = require("./ShangXian_classes.js");
+  const classController = require("./ShangXian_classes.js");
   ```
 #### Type the following into the terminal to start using the node module
   
@@ -36,25 +36,25 @@ assignment1/
 #### Example of `app.js`
 
 ```js
-const timetableController = require("./ShangXian_classes.js");
+const classController = require("./ShangXian_classes.js");
 
 // Add Class
 console.log("");
-const addedClass = timetableController.addClass("Workplace Digital Skills", "EGC155", "10/11/2025","2:00","Jim");
+const addedClass = classController.addClass("Workplace Digital Skills", "EGC155", "10/11/2025","2:00","Jim");
 console.log(addedClass + " added");
 console.log("");
 
 // Reschedule classes
-timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
+classController.rescheduleClass("Calculus", "12/11/2025", "09:30");
 // List classes to show rescheduled class
 console.log("Updated timetable:");
-timetableController.listClass().forEach((cls, index) => {
+classController.listClass().forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
 });
 console.log("");
 
 // Find class by modName
-const mod = timetableController.searchClass("electronics");
+const mod = classController.searchClass("electronics");
 console.log("Search Results:")
 mod.forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`)
@@ -62,16 +62,17 @@ mod.forEach((cls, index) => {
 console.log("");
 
 // Remove class by modCode
-const remove = timetableController.removeClass("Workplace Digital Skills");
+const remove = classController.removeClass("Workplace Digital Skills");
 console.log(`Removed class: ${remove.modName}`);
 console.log("");
 
 // List all classes
 console.log("Classes list:")
-timetableController.listClass().forEach((cls, index) => {
+classController.listClass().forEach((cls, index) => {
   console.log(`${index + 1}. ${cls.modName} [${cls.modCode}] - Date: ${cls.date} | Time: ${cls.time} / Tutor: ${cls.tutor}`);
 });
 console.log("");
+
 ```
 
 #### Sample data for classes
@@ -94,52 +95,50 @@ console.log("");
 #### Example of Function 1
 
   ```js
-  const addedClass = timetableController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
+  classController.addClass("Workplace Digital Skills","EGC155","11/11/2025", "2:00","Siew Peng Shorn");
   ```
 
 ## 2. Reschedule classes
 #### Function 2 allows students to reschedule their classes by changing the date and time of their class 
   
   ```js
-  timetableController.rescheduleClass(modName, date, time);
+  classController.rescheduleClass(modName, date, time);
   ```
 #### Example of Function 2
 
   ```js
-  timetableController.rescheduleClass("Calculus", "12/11/2025", "09:30");
+  classController.rescheduleClass("Calculus", "12/11/2025", "09:30");
   ```
 
 ## 3. Search classes
-#### Function 3 allows students for their classes by the module name
+#### Function 3 allows students to search for their classes by the module name
   
   ```js
-  timetableController.searchClass(modName);
+  classController.searchClass(modName);
   ```
 #### Example of Function 3
 
   ```js
-  timetableController.searchClass("Digital Electronics");
+  classController.searchClass("Digital Electronics");
   ```
 
 ## 4. Cancel classes
-#### Function 4 allows students cancel their classes by passing the parameter modName into the function
+#### Function 4 allows students to cancel their classes
   
   ```js
-  timetableController.removeClass(modName);
+  classController.removeClass(modName);
   ```
 #### Example of Function 4
 
   ```js
-  timetableController.removeClass("Workplace Digital Skills");
+  classController.removeClass("Workplace Digital Skills");
   ```
 
 ## 5. List classes
 #### Function 5 allows students list out all their classes  
 
-#### Example of Function 5
-
   ```js
-  timetableController.listClass();
+  classController.listClass();
   ```
 
 
@@ -147,7 +146,10 @@ console.log("");
 
 # References
 [PoliteMall](https://politemall.polite.edu.sg/catalog?pagename=Home)
+
 [MyNYP Portal](https://mynypportal.nyp.edu.sg/en.html)
+
 [JS findIndex](https://www.w3schools.com/jsref/jsref_findindex.asp)
+
 [JS Splice](https://www.w3schools.com/jsref/jsref_splice.asp)
 
