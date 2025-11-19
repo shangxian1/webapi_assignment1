@@ -9,8 +9,8 @@ module.exports = {
     ],
 
     //Function 1: Add classes
-    addClass(modName, modCode, time, tutor) {
-        this.classes.push({ modName: modName, modCode: modCode, time: time, tutor: tutor });
+    addClass(modName, modCode, date, time, tutor) {
+        this.classes.push({ modName: modName, modCode: modCode, date: date, time: time, tutor: tutor });
         return (modName);
     },
 
